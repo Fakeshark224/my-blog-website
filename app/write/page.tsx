@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { supabase } from '../../lib/supabase'
 
-const QuillEditor = dynamic(() => import('@/components/QuillEditor'), { ssr: false })
+const QuillEditor = dynamic(() => import('../../components/QuillEditor'), { ssr: false })
 
 const CATS = ['Business', 'Finance', 'Technology', 'Analysis',
                'Macroeconomics', 'Culture', 'Ideas']
