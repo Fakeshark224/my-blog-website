@@ -1,0 +1,21 @@
+{
+  "name": "multiuser-blog",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@supabase/auth-helpers-nextjs": "0.8.7",
+    "@supabase/supabase-js": "^2.108.2",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-quill": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "typescript": "latest"
+  }
+}
