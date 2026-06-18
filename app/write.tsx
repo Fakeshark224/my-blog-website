@@ -5,7 +5,6 @@ import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { useRouter } from 'next/navigation';
 import 'react-quill/dist/quill.snow.css'; // Minimalist editor theme
 
-// Import dynamically to avoid Server-Side Rendering issues with Quill
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 
 export default function WriteBlog() {

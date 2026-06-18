@@ -1,11 +1,15 @@
-import Navbar from '../components/Navbar'; // Naya component import karo
-import './globals.css'; 
+import Navbar from '../components/Navbar';
+import './globals.css';
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body>
-        <Navbar /> {/* Bas yahan import karke use karo */}
+        <Navbar />
         <main>{children}</main>
       </body>
     </html>
