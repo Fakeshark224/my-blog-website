@@ -28,27 +28,7 @@ export default async function HomePage() {
 
   return (
     <>
-      <nav className="nav">
-        <div className="nav__inner">
-          <a href="/" className="nav__logo">Meridian.</a>
-          <ul className="nav__links">
-            <li><a href="/" className="nav__link nav__link--active">Editorial</a></li>
-            <li><a href="#featured" className="nav__link">Features</a></li>
-            <li><a href="/write" className="nav__link">Write</a></li>
-          </ul>
-          <div className="nav__actions">
-            <button className="nav__search">
-              <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
-                <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" strokeWidth="1.5"/>
-                <path d="M10.5 10.5L14 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-              </svg>
-              Search
-            </button>
-            <button className="btn btn--ghost">Sign In</button>
-            <a href="#newsletter" className="btn btn--primary">Subscribe</a>
-          </div>
-        </div>
-      </nav>
+      
 
       {/* TOP BANNER — paste your AdSense code inside */}
       <div className="container">
@@ -117,12 +97,7 @@ export default async function HomePage() {
                 <span className="section-header__title">Latest Articles</span>
               </div>
 
-              <nav className="tab-bar">
-                {['Latest','Business','Finance','Technology'].map((t,i) => (
-                  <button key={t}
-                    className={`tab${i === 0 ? ' tab--active' : ''}`}>{t}</button>
-                ))}
-              </nav>
+             
 
               <div className="card-list">
                 {posts.slice(0, 10).map((post, i) => (
